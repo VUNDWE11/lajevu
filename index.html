@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LASA POCKET WIFI TECHNOLOGY</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -47,9 +51,8 @@
     .container {
       display: flex;
       flex-wrap: wrap;
-      padding: 0 20px;
-      gap: 0;
-      align-items: flex-start;
+      padding: 30px 20px;
+      gap: 20px;
       justify-content: center;
     }
 
@@ -63,15 +66,11 @@
     .text-section {
       max-width: 600px;
       background: white;
-      padding: 30px;
-      border-radius: 0;
-      box-shadow: none;
-      margin: 0;
-      border-top: 1px solid #ddd;
-    }
-
-    .text-section:first-child {
-      border-top: none;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 0;
+      width: 100%;
     }
 
     .text-section h2 {
@@ -88,7 +87,7 @@
 
     .highlight-offer {
       background: #e6f9ff;
-      padding: 30px;
+      padding: 15px;
       margin: 20px 0;
       border-left: 6px solid #00aaff;
       font-weight: bold;
@@ -108,37 +107,48 @@
       margin-bottom: 10px;
     }
 
-    form input, form textarea {
+    form {
+      max-width: 600px;
       width: 100%;
-      padding: 30px;
-      margin: 8px 0;
+      margin: 0 auto;
+    }
+
+    form input,
+    form textarea,
+    form button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
       border: 1px solid #ccc;
-      border-radius: 5px;
+      border-radius: 6px;
       font-size: 1em;
     }
 
     form button {
       background-color: #e60000;
       color: white;
-      padding: 30px 20px;
       border: none;
-      border-radius: 5px;
       cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: #cc0000;
     }
 
     footer {
       background-color: #222;
       color: #ddd;
       text-align: center;
-      padding: 30px;
+      padding: 20px;
       font-size: 0.9em;
-      margin-top: 0;
+      margin-top: 40px;
     }
 
     @media (max-width: 768px) {
       .animated-text {
         font-size: 0.95em;
-        padding: 30px 20px;
+        padding: 8px 18px;
       }
 
       header h1 {
@@ -148,7 +158,7 @@
       .container {
         flex-direction: column;
         align-items: center;
-        padding: 0;
+        padding: 20px 10px;
       }
 
       .text-section {
@@ -158,6 +168,7 @@
   </style>
 </head>
 <body>
+
 <header>
   <div class="animated-text">
     🎓 Promosheni kwa Wanachuo, Walimu, Watumiaji wa Kompyuta na Simu za Kisasa!
@@ -191,10 +202,15 @@
         <li>100GB kwa Tsh 75,000</li>
         <li>200GB kwa Tsh 100,000</li>
       </ul>
+    </div>
+
     <p>⚡ Router hii inaweza kuunganisha <strong>simu, kompyuta, tablets</strong> zote kwa speed ya 4G hadi <strong style="color:#27ae60;">150MB/s</strong>.</p>
     <p>🚚 <strong>Free delivery hadi mikoani!</strong></p>
     <p><em>Vigezo: uwe na namba ya NIDA na kuzingatia maokoto tuu.</em><br>
     Njoo inbox au nipigie kwa urahisi! WHATSAPP 0757677240, PIGA 0757677240, TUMA MESEJI 0757677240</p>
+  </div>
+</div>
+
 <div class="container">
   <div class="text-section">
     <h2>Kwa Nini Ununue 4G Pocket WiFi Hii?</h2>
@@ -207,28 +223,26 @@
       <li><strong style="color:#1abc9c;">Hakuna usumbufu:</strong> Kifurushi kimoja kinadumu mwezi mzima!</li>
       <li><strong style="color:#d35400;">Free delivery hadi mikoani:</strong> Popote ulipo tunakuletea bila gharama!</li>
     </ul>
+  </div>
+</div>
+
 <div class="container">
   <div class="text-section">
     <h2>Tuachie Maoni Yako au Mawasiliano</h2>
     <form action="submit_comment.php" method="post">
       <label for="jina">Jina lako:</label><br>
-      <input type="text" id="jina" name="jina" required><br>
+      <input type="text" id="jina" name="jina" required>
 
       <label for="simu">Namba ya Simu:</label><br>
-      <input type="text" id="simu" name="simu" required><br>
+      <input type="text" id="simu" name="simu" required>
 
       <label for="ujumbe">Ujumbe/Maoni:</label><br>
-      <textarea id="ujumbe" name="ujumbe" rows="5" required></textarea><br>
+      <textarea id="ujumbe" name="ujumbe" rows="5" required></textarea>
 
       <button type="submit">Tuma</button>
     </form>
   </div>
 </div>
-  </div>
-  </div>
-  </div>
-    </div>
-  </div>
 
 <footer>
   &copy; 2025 LASA POCKET WIFI TECHNOLOGY. Haki zote zimehifadhiwa.
