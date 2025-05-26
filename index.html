@@ -17,7 +17,6 @@
       color: white;
       padding: 30px 20px 60px;
       text-align: center;
-      position: relative;
     }
 
     .animated-text {
@@ -48,8 +47,8 @@
     .container {
       display: flex;
       flex-wrap: wrap;
-      padding: 30px 20px;
-      gap: 20px;
+      padding: 0 20px;
+      gap: 0;
       align-items: flex-start;
       justify-content: center;
     }
@@ -65,9 +64,14 @@
       max-width: 600px;
       background: white;
       padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
+      border-radius: 0;
+      box-shadow: none;
+      margin: 0;
+      border-top: 1px solid #ddd;
+    }
+
+    .text-section:first-child {
+      border-top: none;
     }
 
     .text-section h2 {
@@ -128,7 +132,7 @@
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
-      margin-top: 40px;
+      margin-top: 0;
     }
 
     @media (max-width: 768px) {
@@ -144,26 +148,13 @@
       .container {
         flex-direction: column;
         align-items: center;
+        padding: 0;
       }
 
       .text-section {
         padding: 20px;
       }
-  /* FIX: Ondoa mwanya unaofanya sections zionekane zimetengwa */
-  .container {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  .text-section {
-    margin-bottom: 0;
-  }
-
-  body {
-    background-color: #f0f4f8; /* Hakikisha ni ile ile background */
-  }
-  /* Ondoa gap isiyo ya lazima */
-  .container + .container {
-    margin-top: -20px;}
+    }
   </style>
 </head>
 <body>
